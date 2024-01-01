@@ -9,7 +9,7 @@ app.use(cors());
 async function executeQuery() {
   try {
     const data = await queryNotionDatabase();
-    console.log(data);
+    // console.log(data);
     // Save the data to a file
     fs.writeFile('productData.json', JSON.stringify(data, null, 2), (err) => {
       if (err) console.error('Error writing to file:', err);
@@ -28,6 +28,20 @@ const port = 3001;
 app.get('/products', (req, res) => {
 
   fs.readFile('productData.json', 'utf8', (err, data) => {
+    console.log(data)
+    if (err) {
+      console.error(`Error reading file from disk: ${err}`);
+      res.status(500).send('Error reading data');
+    } else {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    }
+  });
+});
+
+app.get('/brands', (req, res) => {
+  fs.readFile('brandData.json', 'utf8', (err, data) => {
+    console.log(data);
     if (err) {
       console.error(`Error reading file from disk: ${err}`);
       res.status(500).send('Error reading data');
