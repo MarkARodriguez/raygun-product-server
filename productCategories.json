@@ -1,10 +1,214 @@
 [
     {
-"Name": "Papers",
-"Image": "https://blazysusan.com/wp-content/uploads/2020/04/logo-badge.png"
+        "Name": "510 Tanks",
+        "Image": "https://example.com/510-tanks-image.jpg"
     },
     {
-"Name": "Wraps",
-"Image": "https://cdn.shopify.com/s/files/1/0503/4570/5639/files/video_logo_B_E.png?height=628&pad_color=ffffff&v=1614363618&width=1200"
+        "Name": "510 Vaporizers",
+        "Image": "https://example.com/510-vaporizers-image.jpg"
+    },
+    {
+        "Name": "Accessories",
+        "Image": "https://example.com/accessories-image.jpg"
+    },
+    {
+        "Name": "Air Fresheners",
+        "Image": "https://example.com/air-fresheners-image.jpg"
+    },
+    {
+        "Name": "Apparel",
+        "Image": "https://example.com/apparel-image.jpg"
+    },
+    {
+        "Name": "Ash Catchers",
+        "Image": "https://example.com/ash-catchers-image.jpg"
+    },
+    {
+        "Name": "Ashtrays",
+        "Image": "https://example.com/ashtrays-image.jpg"
+    },
+    {
+        "Name": "Bangers",
+        "Image": "https://example.com/bangers-image.jpg"
+    },
+    {
+        "Name": "Batteries",
+        "Image": "https://example.com/batteries-image.jpg"
+    },
+    {
+        "Name": "Battery Chargers",
+        "Image": "https://example.com/battery-chargers-image.jpg"
+    },
+    {
+        "Name": "Bowls",
+        "Image": "https://example.com/bowls-image.jpg"
+    },
+    {
+        "Name": "Bubblers",
+        "Image": "https://example.com/bubblers-image.jpg"
+    },
+    {
+        "Name": "Butane",
+        "Image": "https://example.com/butane-image.jpg"
+    },
+    {
+        "Name": "Candles",
+        "Image": "https://example.com/candles-image.jpg"
+    },
+    {
+        "Name": "Carb Caps",
+        "Image": "https://example.com/carb-caps-image.jpg"
+    },
+    {
+        "Name": "Chillums",
+        "Image": "https://example.com/chillums-image.jpg"
+    },
+    {
+        "Name": "Cleaning Products",
+        "Image": "https://example.com/cleaning-products-image.jpg"
+    },
+    {
+        "Name": "Coils",
+        "Image": "https://example.com/coils-image.jpg"
+    },
+    {
+        "Name": "Collections",
+        "Image": "https://example.com/collections-image.jpg"
+    },
+    {
+        "Name": "Cones",
+        "Image": "https://example.com/cones-image.jpg"
+    },
+    {
+        "Name": "Cotton Wicks",
+        "Image": "https://example.com/cotton-wicks-image.jpg"
+    },
+    {
+        "Name": "Dab Rigs",
+        "Image": "https://example.com/dab-rigs-image.jpg"
+    },
+    {
+        "Name": "Dab Tools",
+        "Image": "https://example.com/dab-tools-image.jpg"
+    },
+    {
+        "Name": "Detox",
+        "Image": "https://example.com/detox-image.jpg"
+    },
+    {
+        "Name": "Disposables",
+        "Image": "https://example.com/disposables-image.jpg"
+    },
+    {
+        "Name": "DIY",
+        "Image": "https://example.com/diy-image.jpg"
+    },
+    {
+        "Name": "Down Stems",
+        "Image": "https://example.com/down-stems-image.jpg"
+    },
+    {
+        "Name": "Drip Tips",
+        "Image": "https://example.com/drip-tips-image.jpg"
+    },
+    {
+        "Name": "Dugouts",
+        "Image": "https://example.com/dugouts-image.jpg"
+    },
+    {
+        "Name": "e-Liquid",
+        "Image": "https://example.com/e-liquid-image.jpg"
+    },
+    {
+        "Name": "e-Liquid (Salt Nic)",
+        "Image": "https://example.com/e-liquid-salt-nic-image.jpg"
+    },
+    {
+        "Name": "E-Nails",
+        "Image": "https://example.com/e-nails-image.jpg"
+    },
+    {
+        "Name": "Flints",
+        "Image": "https://example.com/flints-image.jpg"
+    },
+    {
+        "Name": "Glass Accessories",
+        "Image": "https://example.com/glass-accessories-image.jpg"
+    },
+    {
+        "Name": "Grinders",
+        "Image": "https://example.com/grinders-image.jpg"
+    },
+    {
+        "Name": "Hand Pipes",
+        "Image": "https://example.com/hand-pipes-image.jpg"
+    },
+    {
+        "Name": "Herb/Wax Vaporizers",
+        "Image": "https://example.com/herb-wax-vaporizers-image.jpg"
+    },
+    {
+        "Name": "Herbal Vaporizers",
+        "Image": "https://example.com/herbal-vaporizers-image.jpg"
+    },
+    {
+        "Name": "Hookah Accessories",
+        "Image": "https://example.com/hookah-accessories-image.jpg"
+    },
+    {
+        "Name": "Hookah Bowls",
+        "Image": "https://example.com/hookah-bowls-image.jpg"
+    },
+    {
+        "Name": "Incense",
+        "Image": "https://example.com/incense-image.jpg"
+    },
+    {
+        "Name": "Incense Burners",
+        "Image": "https://example.com/incense-burners-image.jpg"
+    },
+    {
+        "Name": "Lighter Fluids",
+        "Image": "https://example.com/lighter-fluids-image.jpg"
+    },
+    {
+        "Name": "Lighters",
+        "Image": "https://example.com/lighters-image.jpg"
+    },
+    {
+        "Name": "Nicotine Substitutes",
+        "Image": "https://example.com/nicotine-substitutes-image.jpg"
+    },
+    {
+        "Name": "Pod Systems",
+        "Image": "https://example.com/pod-systems-image.jpg"
+    },
+    {
+        "Name": "Pods",
+        "Image": "https://example.com/pods-image.jpg"
+    },
+    {
+        "Name": "Pre-Built Coils",
+        "Image": "https://example.com/pre-built-coils-image.jpg"
+    },
+    {
+        "Name": "Pre-Filled Lighters",
+        "Image": "https://example.com/pre-filled-lighters-image.jpg"
+    },
+    {
+        "Name": "Pre-filled Pods",
+        "Image": "https://example.com/pre-filled-pods-image.jpg"
+    },
+    {
+        "Name": "RDA",
+        "Image": "https://example.com/rda-image.jpg"
+    },
+    {
+        "Name": "Regulated Box Mods",
+        "Image": "https://example.com/regulated-box-mods-image.jpg"
+    },
+    {
+        "Name": "Replacement Glass",
+        "Image": "https://example.com/regulated-box-mods-image.jpg"
     }
 ]
