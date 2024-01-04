@@ -110,7 +110,19 @@ app.get('/categories', (req, res) => {
   });
 });
 
- 
+ //endpoint for limitedEdition
+app.get('/limited', (req, res) => {
+  fs.readFile('limitedEdition.json', 'utf8', (err, data) => {
+    // console.log(data);
+    if (err) {
+      console.error(`Error reading file from disk: ${err}`);
+      res.status(500).send('Error reading data');
+    } else {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    }
+  });
+});
 
 // Listening to the port
 app.listen(port, () => {
