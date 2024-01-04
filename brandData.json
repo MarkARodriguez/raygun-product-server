@@ -1,26 +1,12 @@
 [
     {
-"Name": "Blazy Susan",
-"Image": "https://blazysusan.com/wp-content/uploads/2020/04/logo-badge.png"
+        "id": "blazysusan",
+        "Name": "Blazy Susan",
+        "Image": "https://blazysusan.com/wp-content/uploads/2020/04/logo-badge.png"
     },
     {
-"Name": "Ongrok",
-"Image": "https://cdn.shopify.com/s/files/1/0503/4570/5639/files/video_logo_B_E.png?height=628&pad_color=ffffff&v=1614363618&width=1200"
-    },
-   {
-"Name": "Sireel",
-"Image": "https://sireelglass.com/wp-content/uploads/2023/10/New-Project.png"
-    },
-    {
-        "Name": "MJ Arsenal",
-        "Image": "https://mjarsenal.com/cdn/shop/files/MJA_W_on_B_Logo.png?v=1655486269"
-            },
-            {
-        "Name": "Cali Crusher",
-        "Image": "https://calicrusher.com/cdn/shop/files/CC_socialshare_5a652a1d-242f-46d3-8162-f3a2cbdfcb7f_1200x1200.jpg?v=1595350130"
-            },
-           {
-        "Name": "With Aiden",
-        "Image": "https://media.licdn.com/dms/image/C560BAQGnwsMsJUPDKA/company-logo_200_200/0/1662909765352/withaiden_logo?e=2147483647&v=beta&t=dTN6s2TMgKRgfawERt0d0AzRldFymaF-TPYrYIfKKtE"
-            }
+        "id": "ongrok",
+        "Name": "Ongrok",
+        "Image": "https://cdn.shopify.com/s/files/1/0503/4570/5639/files/video_logo_B_E.png?height=628&pad_color=ffffff&v=1614363618&width=1200"
+    }
 ]
