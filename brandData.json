@@ -2,11 +2,13 @@
     {
         "id": "blazysusan",
         "Name": "Blazy Susan",
-        "Image": "https://blazysusan.com/wp-content/uploads/2020/04/logo-badge.png"
+        "Image": "https://blazysusan.com/wp-content/uploads/2020/04/logo-badge.png",
+        "databaseId": "b642fca066454c7188f10529ccf98896"
     },
     {
         "id": "ongrok",
         "Name": "Ongrok",
-        "Image": "https://cdn.shopify.com/s/files/1/0503/4570/5639/files/video_logo_B_E.png?height=628&pad_color=ffffff&v=1614363618&width=1200"
+        "Image": "https://cdn.shopify.com/s/files/1/0503/4570/5639/files/video_logo_B_E.png?height=628&pad_color=ffffff&v=1614363618&width=1200",
+        "databaseId": "32e2dac51912479087d5d17e54fd5746"
     }
 ]
