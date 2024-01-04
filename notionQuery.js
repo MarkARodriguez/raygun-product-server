@@ -7,9 +7,8 @@ const { Client } = require('@notionhq/client');
 
 const notion = new Client({ auth: "secret_lPbvYbVn6eZSSuusYQ6Ocy15nKjlS96bYYTghldbKmP" }); //hide later
 
-async function queryNotionDatabase() {
+async function queryNotionDatabase(databaseId) {
   try {
-    const databaseId = 'b642fca066454c7188f10529ccf98896';
     const response = await notion.databases.query({ database_id: databaseId });
 
     return response.results.map(page => {

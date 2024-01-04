@@ -2,15 +2,18 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const queryNotionDatabase = require('./notionQuery');
+const databaseIds = require('./databaseID.json');
+
+// Now you can access the IDs in your code
+console.log(databaseIds);
 const cors = require('cors');
 app.use(cors()); 
 
-
 // Function to execute the query and handle the results
-async function executeQuery() {
+async function executeQuery(databaseId) {
   try {
-    const data = await queryNotionDatabase();
-    // console.log(data);
+    const data = await queryNotionDatabase(databaseId);
+    console.log(data);
     // Save the data to a file
     fs.writeFile('productData.json', JSON.stringify(data, null, 2), (err) => {
       if (err) console.error('Error writing to file:', err);
@@ -21,7 +24,7 @@ async function executeQuery() {
 }
 
 // Run the query initially
-executeQuery();
+executeQuery(databaseIds.BlazySusan);
 
 
 const port = 3001;
@@ -40,6 +43,7 @@ app.get('/products', (req, res) => {
   });
 });
 
+//endpoint for brands
 app.get('/brands', (req, res) => {
   fs.readFile('brandData.json', 'utf8', (err, data) => {
     // console.log(data);
@@ -53,6 +57,20 @@ app.get('/brands', (req, res) => {
   });
 });
 
+
+//endpoint for categories
+app.get('/categories', (req, res) => {
+  fs.readFile('productCategories.json', 'utf8', (err, data) => {
+    // console.log(data);
+    if (err) {
+      console.error(`Error reading file from disk: ${err}`);
+      res.status(500).send('Error reading data');
+    } else {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    }
+  });
+});
 
 //payments
 // Node.js (Server-side) Example
