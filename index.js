@@ -2,6 +2,11 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const queryNotionDatabase = require('./notionQuery');
+require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
+const YOUR_DOMAIN = process.env.YOUR_DOMAIN;
+
 
 // Now you can access the IDs in your code
 const cors = require('cors');
@@ -122,6 +127,52 @@ app.get('/limited', (req, res) => {
       res.json(jsonData);
     }
   });
+});
+
+app.use(express.json());
+//Payments endpoint
+app.post('/create-checkout-session', async (req, res) => {
+  try {
+      const cartItems = req.body.cartItems;
+
+      const line_items = cartItems.map(item => {
+          const price = Number(item.Price);
+          const quantity = Number(item.quantity);
+
+          if (isNaN(price)) {
+              throw new Error(`Invalid price: ${item.Price}`);
+          }
+
+          if (isNaN(quantity)) {
+              throw new Error(`Invalid quantity: ${item.Quantity}`);
+          }
+
+          return {
+              price_data: {
+                  currency: 'usd',
+                  product_data: {
+                      name: item.Name,
+                      images: item.Image ? [item.Image] : [],
+                  },
+                  unit_amount: Math.round(price * 100),
+              },
+              quantity: quantity,
+          };
+      });
+
+      const session = await stripe.checkout.sessions.create({
+          payment_method_types: ['card'],
+          line_items,
+          mode: 'payment',
+          success_url: `${YOUR_DOMAIN}/success?session_id={CHECKOUT_SESSION_ID}`,
+          cancel_url: `${YOUR_DOMAIN}/checkout`,
+      });
+
+      res.json({ id: session.id });
+  } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: error.message });
+  }
 });
 
 // Listening to the port
